@@ -22,6 +22,6 @@ export interface IUrl extends Document{
     shortUrl:string
 }
 
-const Url:Model<IUrl>=mongoose.model.Url || mongoose.model<IUrl>('Url',urlSchema);
+const Url:Model<IUrl>=mongoose.models.Url || mongoose.model<IUrl>('Url',urlSchema);
 
-export default Url;
+export default Url
